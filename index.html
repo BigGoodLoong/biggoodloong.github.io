@@ -11,15 +11,23 @@
 </head>
 
 <body>
+  <nav>
+    <a href="#/baguwen">EN</a>
+    <a href="#/leetcode">中文</a>
+  </nav>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      name: 'Elon\'s wiki',
+      repo: 'https://github.com/BigGoodLoong',
       loadSidebar: true,
-      subMaxLevel: 3,
-      sidebarDisplayLevel: 1, // set sidebar display level
-      search: {
+      subMaxLevel: 2,
+      // sidebarDisplayLevel: 1, // set sidebar display level
+      // alias: {
+        //   '/.*/_sidebar.md': '/_sidebar.md'//防止意外回退
+        // },
+      loadNavbar: true,
+        search: {
         paths: 'auto', // or 'auto'
         placeholder: 'Type to search',
         placeholder: 'Type to search',
